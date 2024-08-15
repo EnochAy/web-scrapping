@@ -20,7 +20,7 @@ Use the requests library to send an HTTP request to the website you want to scra
 python
 Copy code
 """
-url = 'https://www.geeksforgeeks.org/python-web-scraping-tutorial/'
+url = 'https://coinmarketcap.com/'
 response = requests.get(url, verify=False)  # Bypass SSL verification)
 
 #url = 'https://example-blog.com'
@@ -78,7 +78,7 @@ Once you have extracted the data, you can save it to a file, a database, or any 
 python
 Copy code
 """
-url = 'https://www.geeksforgeeks.org/python-web-scraping-tutorial/'
+url = 'https://coinmarketcap.com/'
 response = requests.get(url)
 soup = BeautifulSoup(response.text, 'html.parser')
 
@@ -111,7 +111,7 @@ service = Service('path/to/chromedriver')  # Replace with the actual path to you
 driver = webdriver.Chrome(service=service)
 
 # Navigate to the desired URL
-driver.get('https://www.geeksforgeeks.org/python-web-scraping-tutorial/')
+driver.get('https://coinmarketcap.com/')
 
 # You can now interact with the web page or extract the page source
 page_source = driver.page_source
@@ -125,7 +125,7 @@ from selenium import webdriver
 
 # Set up the WebDriver (choose the appropriate driver for your browser)
 driver = webdriver.Chrome(executable_path='path/to/chromedriver')
-driver.get('https://www.geeksforgeeks.org/python-programming-language/')
+driver.get('https://coinmarketcap.com/')
 
 # Wait for the content to load, if necessary
 # You can use WebDriverWait for specific elements
@@ -151,7 +151,7 @@ This should give you a good starting point for web scraping in Python. If you ha
 
 """
 # Making a GET request
-r = requests.get('https://www.geeksforgeeks.org/python-web-scraping-tutorial/')
+r = requests.get('https://coinmarketcap.com/')
 
 # check status code for response received
 # success code - 200

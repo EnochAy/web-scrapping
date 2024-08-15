@@ -14,7 +14,7 @@ echo data=[]>>scraper.py
 echo return pd.DataFrame(data)>>scraper.py
 echo.>>scraper.py
 echo if ^__name__ == "^__main__":>>scraper.py
-echo url="http://example.com/data">>scraper.py
+echo url="https://coinmarketcap.com/">>scraper.py
 echo scraped_data=scrape_data(url)>>scraper.py
 echo scraped_data.to_csv('scraped_data.csv', index=False)>>scraper.py
 echo echo "Data scraped and saved to scraped_data.csv">>scraper.py
@@ -52,7 +52,7 @@ echo from transform import clean_data>>pipeline.py
 echo from load import load_data_to_db>>pipeline.py
 echo.>>pipeline.py
 echo def run_pipeline():>>pipeline.py
-echo url="http://example.com/data">>pipeline.py
+echo url="https://coinmarketcap.com/">>pipeline.py
 echo scraped_data=scrape_data(url)>>pipeline.py
 echo scraped_data.to_csv('scraped_data.csv', index=False)>>pipeline.py
 echo.>>pipeline.py

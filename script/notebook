@@ -62,7 +62,7 @@ def scrape_data(url):
     return pd.DataFrame(data)
 
 if __name__ == "__main__":
-    url = "http://example.com/data"
+    url = "https://coinmarketcap.com/"
     scraped_data = scrape_data(url)
     scraped_data.to_csv('scraped_data.csv', index=False)
     print("Data scraped and saved to scraped_data.csv")
@@ -130,7 +130,7 @@ from load import load_data_to_db
 
 def run_pipeline():
     # Step 1: Extract
-    url = "http://example.com/data"
+    url = "https://coinmarketcap.com/"
     scraped_data = scrape_data(url)
     scraped_data.to_csv('scraped_data.csv', index=False)
 
