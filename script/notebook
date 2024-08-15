@@ -125,7 +125,7 @@ python
 Copy code
 """
 from scraper import scrape_data
-from transform import clean_data
+#from transform import clean_data
 from load import load_data_to_db
 
 def run_pipeline():
