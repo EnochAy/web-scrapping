@@ -107,7 +107,7 @@ echo - PostgreSQL>>README.md
 echo.>>README.md
 echo ## Author>>README.md
 echo.>>README.md
-echo - **Your Name**: [Ayomide Fadeyi]>>README.md
+echo - **Your Name**: Ayomide Fadeyi>>README.md
 echo.>>README.md
 echo ## License>>README.md
 echo.>>README.md
