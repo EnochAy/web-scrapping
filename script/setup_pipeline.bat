@@ -103,11 +103,11 @@ echo.>>README.md
 echo ## Requirements>>README.md
 echo.>>README.md
 echo - Python 3.x>>README.md
-echo - PostgreSQL or another database of your choice>>README.md
+echo - PostgreSQL>>README.md
 echo.>>README.md
 echo ## Author>>README.md
 echo.>>README.md
-echo - **Your Name**: [Your Contact Information]>>README.md
+echo - **Your Name**: [Ayomide Fadeyi]>>README.md
 echo.>>README.md
 echo ## License>>README.md
 echo.>>README.md
