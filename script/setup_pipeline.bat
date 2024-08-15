@@ -43,7 +43,7 @@ echo df.to_sql('scraped_data', conn, if_exists='replace', index=False)>>load.py
 echo echo "Data loaded into the database">>load.py
 echo.>>load.py
 echo if ^__name__ == "^__main__":>>load.py
-echo db_uri="postgresql://username:password@localhost:5432/yourdatabase">>load.py
+echo db_uri="postgresql://localhost:EnochAy@88@localhost:3306/sales">>load.py
 echo load_data_to_db('transformed_data.csv', db_uri)>>load.py
 echo.>>load.py
 
@@ -59,7 +59,7 @@ echo.>>pipeline.py
 echo transformed_data=clean_data('scraped_data.csv')>>pipeline.py
 echo transformed_data.to_csv('transformed_data.csv', index=False)>>pipeline.py
 echo.>>pipeline.py
-echo db_uri="postgresql://username:password@localhost:5432/yourdatabase">>pipeline.py
+echo db_uri="postgresql://localhost:EnochAy@88@localhost:3306/sales">>pipeline.py
 echo load_data_to_db('transformed_data.csv', db_uri)>>pipeline.py
 echo.>>pipeline.py
 echo if ^__name__ == "^__main__":>>pipeline.py

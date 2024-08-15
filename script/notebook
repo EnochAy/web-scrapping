@@ -114,7 +114,7 @@ def load_data_to_db(file_path, db_uri):
         print("Data loaded into the database")
 
 if __name__ == "__main__":
-    db_uri = "postgresql://username:password@localhost:5432/yourdatabase"
+    db_uri = "postgresql://localhost:EnochAy@88@localhost:3306/sales"
     load_data_to_db('transformed_data.csv', db_uri)
 
 """
@@ -139,7 +139,7 @@ def run_pipeline():
     transformed_data.to_csv('transformed_data.csv', index=False)
 
     # Step 3: Load
-    db_uri = "postgresql://username:password@localhost:5432/yourdatabase"
+    db_uri = "postgresql://localhost:EnochAy@88@localhost:3306/sales"
     load_data_to_db('transformed_data.csv', db_uri)
 
 if __name__ == "__main__":
