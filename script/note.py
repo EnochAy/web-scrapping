@@ -160,3 +160,22 @@ print(r)
 # print content of request
 print(r.content)
 """
+
+
+
+import requests
+from bs4 import BeautifulSoup
+import pandas as pd
+
+# Extract
+url = "(link unavailable)"
+response = requests.get(url)
+soup = BeautifulSoup(response.content, 'html.parser')
+data = soup.find_all('div', {'class': 'data'})
+
+# Transform
+data = [item.text.strip() for item in data]
+data = pd.DataFrame(data, columns=['column_name'])
+
+# Load
+data.to_csv('data.csv', index=False)
