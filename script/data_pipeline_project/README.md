@@ -32,7 +32,7 @@ python pipeline.py
 
 ## Author
 
-- **Your Name**: [Your Contact Information]
+- **Your Name**: Ayomide Fadeyi
 
 ## License
 
